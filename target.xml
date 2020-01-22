@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<TRADEFAIR_CDM>
+	<special_external_media>
+		<events>
+			<event event_id="1" event_lang="UNI">
+				<nd_title lang="DE">Event title</nd_title>
+				<nd_title lang="EN">Event title</nd_title>
+				<nd_subtitle lang="EN">Short text event</nd_subtitle>
+				<nd_subtitle lang="DE">Short text event</nd_subtitle>
+				<nd_description lang="DE">
+					<nd_fulltext>
+						<![CDATA[Long text event]]>
+					</nd_fulltext>
+				</nd_description>
+				<nd_description lang="EN">
+					<nd_fulltext>
+						<![CDATA[Long text event]]>
+					</nd_fulltext>
+				</nd_description>
+				<dates dt_type="Event">
+					<dt_from>2020-05-05T10:45:00</dt_from>
+					<dt_to>2020-05-05T11:45:00</dt_to>
+				</dates>
+				<location_refs>
+					<location_id>1200.2369.1</location_id>
+				</location_refs>
+				<nd_images>
+					<url lang="UNI" last_modified="2020-01-16T10:45:46Z">
+						<url_href>http://example-image.com</url_href>
+					</url>
+				</nd_images>
+				<nomenclatures>
+					<nomenclature>
+						<nc_ref def_id="18">12</nc_ref>
+					</nomenclature>
+				</nomenclatures>
+			</event>
+		</events>
+	</special_external_media>
+</TRADEFAIR_CDM>
