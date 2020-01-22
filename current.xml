@@ -1,108 +1,86 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<nfm_app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version='1.0' encoding='UTF-8' ?>
+<TRADEFAIR_CDM>
   <special_external_media>
-    <events_nfm>
-      <event_nfm event_id="1">
-        <event_texts>
-          <event_text lang="de" title="Event title" text_short="Short text event" text_long="Long text event" code_youtube="" link_fi="" />
-          <event_text lang="en" title="Event title" text_short="Short text event" text_long="Long text event" code_youtube="" link_fi="" />
-        </event_texts>
-        <event_dates>
-          <event_date from="2020-05-05T10:45:00" to="2020-05-05T11:45:00" />
-        </event_dates>
-        <event_location>
-          <event_location lang="de" type="location">
-            <location_booth />
-            <location_address>
-              <event_address />
-            </location_address>
-            <location_other>
-              <event_language_text lang="de">
-                <description>Description</description>
-                <description_ext>Halle C2.220</description_ext>
-              </event_language_text>
-              <event_language_text lang="en">
-                <description>Description</description>
-                <description_ext>Hall C2.220</description_ext>
-              </event_language_text>
-            </location_other>
-          </event_location>
-          <event_location lang="en" type="location">
-            <location_booth />
-            <location_address>
-              <event_address />
-            </location_address>
-            <location_other>
-              <event_language_text lang="de">
-                <description>Description</description>
-                <description_ext>Halle C2.220</description_ext>
-              </event_language_text>
-              <event_language_text lang="en">
-                <description>Description</description>
-                <description_ext>Hall C2.220</description_ext>
-              </event_language_text>
-            </location_other>
-          </event_location>
-        </event_location>
-        <event_languages>
-          <event_language_text lang="de">
-            <description>Deutsch/Englisch mit Simultan-Übersetzung</description>
-            <description_ext>DE,EN</description_ext>
-          </event_language_text>
-          <event_language_text lang="en">
-            <description>English/German with simultaneous interpretation</description>
-            <description_ext />
-          </event_language_text>
-        </event_languages>
-        <event_logos />
-        <event_types>
-          <event_language_text lang="de">
-            <description>Vorträge</description>
-            <description_ext />
-          </event_language_text>
-          <event_language_text lang="en">
-            <description>Lectures</description>
-            <description_ext />
-          </event_language_text>
-        </event_types>
-        <event_categories>
-          <event_category item_id="1">
-            <event_language_text lang="de">
-              <description>Zukunft Wasser - Zugang &amp; Qualität</description>
-              <description_ext />
-            </event_language_text>
-            <event_language_text lang="en">
-              <description>The future of water - access and quality</description>
-              <description_ext />
-            </event_language_text>
-          </event_category>
-        </event_categories>
-        <event_contacts>
-          <event_person>
-            <company />
-            <position />
-            <title />
-            <firstname>firstname</firstname>
-            <lastname>lastname</lastname>
-            <role />
-            <tel>telephone</tel>
-            <email>email</email>
-          </event_person>
-        </event_contacts>
-        <event_promoters>
-          <event_promoter>
-            <event_address>
-              <name></name>
-              <street />
-              <postcode />
-              <city />
-              <tel />
-              <email />
-              <web></web>
-            </event_address>
-          </event_promoter>
-        </event_promoters>
-      </event_nfm>
-    </events_nfm>
+    <events>
+      <event event_id="1" event_lang="UNI">
+        <nd_title lang="DE">Event title</nd_title>
+        <nd_title lang="EN">Event title</nd_title>
+        <nd_subtitle lang="EN">Short text event</nd_subtitle>
+        <nd_subtitle lang="DE">Short text event</nd_subtitle>
+        <nd_description lang="DE">
+          <nd_fulltext>
+            <![CDATA[Long text event]]>
+          </nd_fulltext>
+        </nd_description>
+        <nd_description lang="EN">
+          <nd_fulltext>
+            <![CDATA[Long text event]]>
+          </nd_fulltext>
+        </nd_description>
+        <dates dt_type="Event">
+          <dt_from>2020-05-05T10:45:00</dt_from>
+          <dt_to>2020-05-05T11:45:00</dt_to>
+        </dates>
+        <location_refs>
+          <location_id>1200.2369.1</location_id>
+        </location_refs>
+        <nd_images>
+          <url lang="UNI" last_modified="2020-01-16T10:45:46Z">
+            <url_href>http://example-image.com</url_href>
+          </url>
+        </nd_images>
+        <nomenclatures>
+          <nomenclature>
+            <nc_ref def_id="18">12</nc_ref>
+          </nomenclature>
+        </nomenclatures>
+        <ex_contacts>
+          <ex_contact con_type="Speaker" contact_id="22.108.2">
+            <con_title/>
+            <con_name>surname</con_name>
+            <con_firstname>firstname</con_firstname>
+            <profile_image>http://speaker-image.com</profile_image>
+          </ex_contact>
+        </ex_contacts>
+      </event>
+    </events>
   </special_external_media>
-</nfm_app>
+  <nomenclatures_defs>
+    <nomenclatures_def def_id="18">
+      <names>
+        <name lang="DE">Veranstaltungstypen/Event categories</name>
+        <name lang="EN">Veranstaltungstypen/Event categories</name>
+      </names>
+      <nc_type>EventCategories</nc_type>
+      <nc_detaillists>
+        <nc_detaillist def_id="18" id="1">
+          <names>
+            <name lang="DE">Vortrag</name>
+            <name lang="EN">Vortrag</name>
+          </names>
+        </nc_detaillist>
+        <nc_detaillist def_id="18" id="3">
+          <names>
+            <name lang="DE">Future Retail</name>
+            <name lang="EN">Future Retail</name>
+          </names>
+        </nc_detaillist>
+        <nc_detaillist def_id="18" id="6">
+          <names>
+            <name lang="DE">Sustainability</name>
+            <name lang="EN">Sustainability</name>
+          </names>
+        </nc_detaillist>
+      </nc_detaillists>
+    </nomenclatures_def>
+  </nomenclatures_defs>
+  <locations>
+    <location booth="220" location_id="1200.2369.1" map="C2">
+      <booth_name>220</booth_name>
+      <names>
+        <name lang="de">Halle C2.220</name>
+        <name lang="en">Hall C2.220</name>
+      </names>
+    </location>
+  </locations>
+</TRADEFAIR_CDM>
