@@ -34,6 +34,14 @@
             <nc_ref def_id="18">12</nc_ref>
           </nomenclature>
         </nomenclatures>
+        <ex_contacts>
+          <ex_contact con_type="Speaker" contact_id="22.108.2">
+            <con_title/>
+            <con_name>surname</con_name>
+            <con_firstname>firstname</con_firstname>
+            <profile_image>http://speaker-image.com</profile_image>
+          </ex_contact>
+        </ex_contacts>
       </event>
     </events>
   </special_external_media>
